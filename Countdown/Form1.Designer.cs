@@ -80,9 +80,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(305, 26);
+            this.label2.Size = new System.Drawing.Size(288, 26);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Aikaa tapahtuman alkamiseen";
+            this.label2.Text = "Time remaining for the event";
             this.label2.Visible = false;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -92,9 +92,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(99, 348);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 24);
+            this.label3.Size = new System.Drawing.Size(158, 24);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Tapahtuman nimi?";
+            this.label3.Text = "The event name?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox1
@@ -113,7 +113,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Aloita laskuri";
+            this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -177,9 +177,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(100, 63);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 13);
+            this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Päivät";
+            this.label8.Text = "Days";
             this.label8.Visible = false;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
@@ -188,9 +188,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(164, 63);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Tunnit";
+            this.label9.Text = "Hours";
             this.label9.Visible = false;
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
@@ -201,7 +201,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 13);
             this.label10.TabIndex = 13;
-            this.label10.Text = "Minuutit";
+            this.label10.Text = "Minutes";
             this.label10.Visible = false;
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
@@ -210,9 +210,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(282, 63);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 13);
+            this.label11.Size = new System.Drawing.Size(49, 13);
             this.label11.TabIndex = 14;
-            this.label11.Text = "Sekuntit";
+            this.label11.Text = "Seconds";
             this.label11.Visible = false;
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
@@ -255,9 +255,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(337, 133);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(31, 13);
+            this.label12.Size = new System.Drawing.Size(35, 13);
             this.label12.TabIndex = 16;
-            this.label12.Text = "Tunti";
+            this.label12.Text = "Hours";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // comboBox2
@@ -336,7 +336,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(44, 13);
             this.label13.TabIndex = 18;
-            this.label13.Text = "Minuutti";
+            this.label13.Text = "Minutes";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // comboBox3
@@ -413,9 +413,9 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(337, 243);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 13);
+            this.label14.Size = new System.Drawing.Size(49, 13);
             this.label14.TabIndex = 20;
-            this.label14.Text = "Sekunti";
+            this.label14.Text = "Seconds";
             // 
             // button2
             // 
@@ -424,7 +424,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 21;
-            this.button2.Text = "Muokkaa";
+            this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
