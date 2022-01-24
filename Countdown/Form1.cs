@@ -85,6 +85,7 @@ namespace Countdown
                 doc.Load("Save.xml");
                 XmlNode node = doc.SelectSingleNode("/nodes/variables[1]");
                 time = float.Parse(node.InnerText);
+                
                 Console.WriteLine("Time " + time);
 
                 node = doc.SelectSingleNode("/nodes/variables[2]");
@@ -152,22 +153,24 @@ namespace Countdown
             }
             else
             {
-                XDocument doc2 = new XDocument();
-                doc2 = new XDocument(new XElement("nodes",
-                                           new XElement("variables", "Selected time"),
-                                           new XElement("variables", "box"),
-                                           new XElement("variables", "eventName"),
-                                           new XElement("variables", "dateTime"),
-                                           new XElement("variables", "selectedhour"),
-                                           new XElement("variables", "selectedminute"),
-                                           new XElement("variables", "selectedsecond")
-                                           ));
-                doc2.Save("Save.xml");
             }
         }
 
         public void SaveForm(double time, bool onlydays)
         {
+            XDocument doc2 = new XDocument();
+            doc2 = new XDocument(new XElement("nodes",
+                                       new XElement("variables", "Selected time"),
+                                       new XElement("variables", "box"),
+                                       new XElement("variables", "eventName"),
+                                       new XElement("variables", "dateTime"),
+                                       new XElement("variables", "selectedhour"),
+                                       new XElement("variables", "selectedminute"),
+                                       new XElement("variables", "selectedsecond")
+                                       ));
+            doc2.Save("Save.xml");
+
+
             XmlDocument doc = new XmlDocument();
             doc.Load("Save.xml");
             XmlNode node = doc.SelectSingleNode("/nodes/variables[1]");
@@ -244,7 +247,7 @@ namespace Countdown
             {
                 label1.Visible = false;
                 label2.Visible = true;
-                label2.Text = "Aikaa tapahtuman " + textBox1.Text + " alkamiseen on";
+                label2.Text = "Time remaining for the event " + textBox1.Text + ":";
                 label4.Visible = true;
                 label5.Visible = true;
                 label6.Visible = true;
@@ -323,13 +326,11 @@ namespace Countdown
                     {
                         if (i % 4 == 0 && i != 4)
                         {
-                            Console.WriteLine("Sisällä");
                             daysyears[i] = 366;
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Sisällä2");
                         daysyears[i] = 366;
                     }
                 }
